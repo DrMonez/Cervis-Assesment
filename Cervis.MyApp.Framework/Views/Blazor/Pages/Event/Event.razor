@@ -1,0 +1,36 @@
+﻿@using Cervis.MyApp.Adapters.UI.Pages.Event
+
+@inherits View<EventViewModel>
+
+@layout MainLayout
+
+<Div Style="padding: 20px;">
+    <h3>@Localizer["Body"]</h3>
+
+    <Button Color="Color.Primary" Command="@ViewModel.AddParticipantCommand">@Localizer["AddParticipantButtonText"]</Button>
+    
+    <table class="table" >
+        <thead>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Is Confirmed</th>
+            <th></th>
+        </tr>
+        </thead>
+        <tbody>
+            @foreach (var participant in ViewModel.Participants)
+            {
+                <tr>
+                    <td>@participant.FirstName</td>
+                    <td>@participant.LastName</td>
+                    <td>@participant.IsConfirmed</td>
+                    <td>
+                        <Button Color="Color.Info" Command="@participant.EditParticipantCommand">@Localizer["EditParticipantButtonText"]</Button>
+                        <Button Color="Color.Danger" Command="@participant.DeleteParticipantCommand">@Localizer["DeleteParticipantButtonText"]</Button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</Div>

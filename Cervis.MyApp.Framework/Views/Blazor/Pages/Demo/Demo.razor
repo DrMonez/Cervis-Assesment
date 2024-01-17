@@ -1,0 +1,11 @@
+﻿@using Cervis.MyApp.Adapters.UI.Pages.Demo
+
+@inherits View<DemoViewModel>
+
+@layout MainLayout
+
+<Div Style="padding: 20px;">
+    <h3>@Localizer["Body"]</h3>
+
+    <Button Color="Color.Primary" Command="@ViewModel.ShowClockCommand">@Localizer["ShowClockButtonText"]</Button>
+</Div>

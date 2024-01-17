@@ -1,0 +1,8 @@
+﻿@using Cervis.MyApp.Adapters.UI.Components.Clock
+@using System.Globalization
+
+@inherits View<ClockViewModel>
+
+<ChangeObserver ViewModel="ViewModel">
+    <p>@Localizer["Text", ViewModel.Time, ViewModel.Date]</p>
+</ChangeObserver>

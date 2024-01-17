@@ -1,0 +1,50 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33815.320
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cervis.MyApp.Framework", "Cervis.MyApp.Framework\Cervis.MyApp.Framework.csproj", "{F331A30C-5558-4307-8D9E-E8CFD8B40CC9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cervis.ClArc.Host", "Cervis.ClArc\Cervis.ClArc.Host\Cervis.ClArc.Host.csproj", "{FC2B110E-CE3E-428A-8649-067A979AB384}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cervis.MyApp.Adapters", "Cervis.MyApp.Adapters\Cervis.MyApp.Adapters.csproj", "{581B35FD-DB0E-4093-9F43-ADF94944861D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_Configuration", "_Configuration", "{9AFFD34F-DAA1-4D88-8EB1-85B6AB69D2B8}"
+	ProjectSection(SolutionItems) = preProject
+		appsettings.dev.json = appsettings.dev.json
+		appsettings.json = appsettings.json
+		launchSettings.json = launchSettings.json
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cervis.MyApp.Business", "Cervis.MyApp.Business\Cervis.MyApp.Business.csproj", "{5489C753-FF54-49F7-B8BE-CFEB71F21FF4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F331A30C-5558-4307-8D9E-E8CFD8B40CC9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F331A30C-5558-4307-8D9E-E8CFD8B40CC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F331A30C-5558-4307-8D9E-E8CFD8B40CC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F331A30C-5558-4307-8D9E-E8CFD8B40CC9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC2B110E-CE3E-428A-8649-067A979AB384}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC2B110E-CE3E-428A-8649-067A979AB384}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC2B110E-CE3E-428A-8649-067A979AB384}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC2B110E-CE3E-428A-8649-067A979AB384}.Release|Any CPU.Build.0 = Release|Any CPU
+		{581B35FD-DB0E-4093-9F43-ADF94944861D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{581B35FD-DB0E-4093-9F43-ADF94944861D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{581B35FD-DB0E-4093-9F43-ADF94944861D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{581B35FD-DB0E-4093-9F43-ADF94944861D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5489C753-FF54-49F7-B8BE-CFEB71F21FF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5489C753-FF54-49F7-B8BE-CFEB71F21FF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5489C753-FF54-49F7-B8BE-CFEB71F21FF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5489C753-FF54-49F7-B8BE-CFEB71F21FF4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C798F950-F079-4635-8C6D-AB065974C0D6}
+	EndGlobalSection
+EndGlobal

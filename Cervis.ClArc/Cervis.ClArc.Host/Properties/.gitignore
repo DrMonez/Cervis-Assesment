@@ -1,0 +1,2 @@
+# this ignore file ensures that the Properties folder is kept (Git can not restore empty folders on checkout)
+/launchSettings.json

@@ -1,0 +1,17 @@
+﻿@using Cervis.MyApp.Adapters.UI.Pages.Counter
+
+@inherits View<CounterViewModel>
+
+@layout MainLayout
+
+<Div Style="padding: 20px;">
+    <h3>@Localizer["Title"]</h3>
+
+    @Localizer["Description"]<br />
+    @Localizer.AsMarkup("SharingInfo", NavigationGoalMapper.MapToPath(ViewModel.ShareNavigationGoal), ViewModel.Id)
+
+    <h4>@Localizer["Value", ViewModel.Value]</h4>
+
+    <Button Color="Color.Primary" Command="ViewModel.IncrementCommand">@Localizer["IncrementButtonText"]</Button>
+    <Button Color="Color.Secondary" Command="ViewModel.ResetCommand">@Localizer["ResetButtonText"]</Button>
+</Div>

@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Cervis.MyApp.Business\Cervis.MyApp.Business.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Cervis.ClArc.Adapters">
+      <HintPath>..\Cervis.ClArc\lib\Cervis.ClArc.Adapters.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

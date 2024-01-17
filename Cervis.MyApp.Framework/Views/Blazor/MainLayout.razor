@@ -1,0 +1,13 @@
+﻿@using Cervis.MyApp.Adapters.UI.Application
+@using Cervis.MyApp.Framework.Views.Blazor.Application
+
+@inherits LayoutComponentBase
+
+<Layout>
+    <LayoutHeader>
+        <NavBar ViewModel="@(((MyAppApplicationViewModel)ViewModel).NavMenu)" />
+    </LayoutHeader>
+    <LayoutContent Style="overflow: hidden;">
+        @Body
+    </LayoutContent>
+</Layout>

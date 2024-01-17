@@ -1,0 +1,39 @@
+﻿<Blazorise.Bar Breakpoint="Breakpoint.Widescreen" Background="Background.White" ThemeContrast="ThemeContrast.Light" Shadow="Shadow.Small">
+    <BarBrand Style="display: inline-flex; align-items: center;">
+        <Div Style="display: inline;">
+            <BarLink To="" Style="display: inline; padding: .5rem 0px;">MyApp (@WebHostEnviroment.EnvironmentName)</BarLink>
+        </Div>
+    </BarBrand>
+    <BarMenu>
+        <BarStart>
+            <BarItem>
+                <NavGoalBarLink Goal="@ViewModel.HomeNavigationGoal">@ApplicationLocalizer["PageTitles", "Home"]</NavGoalBarLink>
+            </BarItem>
+            <BarItem>
+                <NavGoalBarLink Goal="@ViewModel.DemoNavigationGoal">@ApplicationLocalizer["PageTitles", "Demo"]</NavGoalBarLink>
+            </BarItem>
+            <BarItem>
+                <NavGoalBarLink Goal="@ViewModel.CounterNavigationGoal">@ApplicationLocalizer["PageTitles", "Counter"]</NavGoalBarLink>
+            </BarItem>
+            <BarItem>
+                <NavGoalBarLink Goal="@ViewModel.EventNavigationGoal">@ApplicationLocalizer["PageTitles", "Event"]</NavGoalBarLink>
+            </BarItem>
+        </BarStart>
+        <BarEnd>
+            <BarItem>
+                <Div Style="margin-top: 9px;">
+                    <CultureSelector />
+                </Div>
+            </BarItem>
+            <BarItem>
+                <BarDropdown RightAligned>
+                    <BarDropdownToggle><Icon Name="IconName.UserCircle" /> MyUser</BarDropdownToggle>
+                    <BarDropdownMenu>
+                        <BarDropdownItem>@Localizer["SomeAction"]</BarDropdownItem>
+                    </BarDropdownMenu>
+                </BarDropdown>
+            </BarItem>
+        </BarEnd>
+    </BarMenu>
+    <BarToggler id="cervis-navbar-toggler" Margin="Margin.Is3.FromTop"></BarToggler>
+</Blazorise.Bar>

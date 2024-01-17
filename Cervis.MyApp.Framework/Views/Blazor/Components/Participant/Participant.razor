@@ -1,0 +1,15 @@
+﻿@using Cervis.MyApp.Adapters.UI.Components.Participant
+
+@inherits View<ParticipantViewModel>
+
+
+<ChangeObserver ViewModel="ViewModel">
+    <label>@Localizer["FirstName"]</label>
+    <InputText @bind-Value="ViewModel.FirstName" maxlength="30" />
+    <label>@Localizer["LastName"]</label>
+    <InputText @bind-Value="ViewModel.LastName" maxlength="30" />
+    <label>@Localizer["IsConfirmed"]</label>
+    <InputCheckbox @bind-Value="ViewModel.IsConfirmed"/>
+    
+    <Button Color="Color.Primary" Command="@ViewModel.SaveParticipantCommand">@Localizer["SaveParticipantButtonText"]</Button>
+</ChangeObserver>
